@@ -20,7 +20,7 @@ function App() {
 <header className="App-header">
 <h1>Welcome to My React App</h1>
 <p>You clicked {count} times</p>
-<button onClick={incrementCount}>Click me</button>
+<button onClick={incrementCount}>Click Here</button>
 </header>
 </div>
 

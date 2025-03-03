@@ -55,7 +55,7 @@ function App() {
 
       ) : (
 <div>
-<h2>Form Submitted!</h2>
+<h2>Form Submitted!!</h2>
 <p>Name: {name}</p>
 <p>Email: {email}</p>
 </div>
