@@ -1,9 +1,11 @@
 import React from "react";
-import products from "../data"; // Import products from data.js
-import "./studies.css"; // Ensure styles are applied
-import "../studies.css";
+import products from "../data";
 
-function Products() {
+function Products({ cart, setCart }) {
+  const addToCart = (product) => {
+    setCart([...cart, product]); // Add product to cart
+  };
+
   return (
     <div className="products-container">
       <h2>Product Catalogue</h2>
@@ -13,6 +15,7 @@ function Products() {
             <img src={product.image} alt={product.name} className="product-image" />
             <h3>{product.name}</h3>
             <p>{product.price}</p>
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
           </div>
         ))}
       </div>
