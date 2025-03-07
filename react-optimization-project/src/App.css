@@ -1,0 +1,23 @@
+.button-group {
+  margin: 20px 0;
+}
+
+.increment-button.danger {
+  background-color: #ff4444;
+}
+
+.increment-button.success {
+  background-color: #00C851;
+}
+
+.logger-section {
+  margin-top: 40px;
+}
+
+.logger.non-memoized {
+  border: 2px solid #ff4444;
+}
+
+.logger.memoized {
+  border: 2px solid #00C851;
+}
