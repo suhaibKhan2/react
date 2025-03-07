@@ -1,16 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../studies.css";  
-import "../studies.css";
+import { Link, useNavigate } from "react-router-dom";
 
-function Navbar({ isAuthenticated }) {
+function Navbar({ isLoggedIn, setIsLoggedIn }) {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    navigate("/");
+  };
+
   return (
     <nav className="navbar">
-      <h1>ShopEase</h1>
-      <div>
-        <Link to="/">Login</Link>
-        {isAuthenticated && <Link to="/products">Products</Link>}
-      </div>
+      <Link to="/">Login</Link>
+      {isLoggedIn && (
+        <>
+          <Link to="/products">Products</Link>
+          <Link to="/cart">Cart</Link>
+          <Link to="/payment">Payment</Link>
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
+        </>
+      )}
     </nav>
   );
 }
