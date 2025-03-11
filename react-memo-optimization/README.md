@@ -1,4 +1,6 @@
 ## Project Documentation
+For a detailed explanation of the project and DFD, check out the [Project DFD](docs/react-memo-optimization.md).
+## Project Documentation
 For a detailed explanation of the project, check out the [Project Blog](docs/project-blog.md).
 
 # Getting Started with Create React App
