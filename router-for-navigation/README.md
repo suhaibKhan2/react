@@ -1,3 +1,5 @@
+## Project Documentation
+For a detailed explanation of the project and DFD, check out the [Project DFD](docs/router-for-navigation.md).
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
